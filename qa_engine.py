@@ -26,4 +26,3 @@ def generate_answer(question, context_chunks):
     
     
     return response.content
-s
