@@ -1,9 +1,13 @@
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
-
+from dotenv import load_dotenv
+ 
+# Load .env file
+load_dotenv()
+ 
 # Initialize hosted LLaMA 3 model using Groq
 llm = ChatGroq(
-    groq_api_key= "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",  # Replace with your real key
+    groq_api_key= "groq_api_key",  # Replace with your real key
     model_name="llama3-70b-8192"       # or "llama3-8b-8192"
 )
 
@@ -22,5 +26,6 @@ def generate_answer(question, context_chunks):
 
     # Run the chain
     response = chain.invoke({"input": question})
+    
     
     return response.content
