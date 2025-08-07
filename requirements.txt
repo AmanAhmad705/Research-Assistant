@@ -9,4 +9,4 @@ langchain
 nltk
 langchain 
 langchain-community
-langchain_ollama
+langchain-groq
