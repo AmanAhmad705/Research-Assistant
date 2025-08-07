@@ -1,0 +1,12 @@
+requests
+PyMuPDF
+streamlit
+sentence-transformers
+faiss-cpu
+openai
+python-dotenv
+langchain
+nltk
+langchain 
+langchain-community
+langchain_ollama
