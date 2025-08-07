@@ -1,9 +1,6 @@
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
-from dotenv import load_dotenv
- 
-# Load .env file
-load_dotenv()
+
  
 # Initialize hosted LLaMA 3 model using Groq
 llm = ChatGroq(
@@ -29,3 +26,4 @@ def generate_answer(question, context_chunks):
     
     
     return response.content
+s
